@@ -97,7 +97,27 @@ const movies = {
   },
 };
 
+class User extends Component {
+ render() {
+  return( 
+    <li key={this.props.user.userId}>{this.props.user.name}</li>
+   );
+ }
+}
+
+
+
+class MovieList extends Component {
+  render() {
+    return (
+      
+      
+    );
+  }
+}
+
 class App extends Component {
+  constructor()
   render() {
     return (
       <div className="App">
