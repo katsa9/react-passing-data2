@@ -110,7 +110,7 @@ class App extends Component {
       if(this.usersByMovie[movieId]) { //if movie id already present, add user to array data associated with movie id
         this.usersByMovie[movieId].push(profile.userID);
       }else {
-        this.usersByMovie[movieId] = profile.userID;
+        this.usersByMovie[movieId] = [profile.userID];
       }
     });
   }
